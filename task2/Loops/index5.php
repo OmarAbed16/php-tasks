@@ -1,39 +1,40 @@
 <?php
 
-function printDiamond($rows) {
-    for ($i = 1; $i <= $rows; $i++) {
-        
-     
-        for ($j = 1; $j <= $rows - $i; $j++) {
-            echo " ";
-        }
-        
+function printDiamond($columns) {
+ for($i=1;$i<$columns;$i++){
+$char="A";
+$len=$columns-$i-2;
 
-        for ($k = 1; $k <= 2 * $i - 1; $k++) {
-            echo "*";
-        }
+echo str_repeat("-",$columns-$i);
+    for($j=0;$j<$i;$j++){
 
-        echo "<br>";
+    echo $char++;
     }
+    echo str_repeat("-",$columns-$i);
+echo "<br>";
 
-    for ($i = $rows - 1; $i >= 1; $i--) {
-        
+ }
+
+
+
+ for($i=$columns;$i>0;$i--){
+    $char="A";
+    echo str_repeat("-",$columns-$i);
+    for($j=1;$j<$i-1;$j++){
+
+    echo $char++;
+    }
+    echo str_repeat("-",$columns-$i);
+    echo "<br>";
     
-        for ($j = 1; $j <= $rows - $i; $j++) {
-            echo " ";
-        }
+     }
 
- 
-        for ($k = 1; $k <= 2 * $i - 1; $k++) {
-            echo "*";
-        }
 
-        echo "<br>";
-    }
 }
 
 
-$row = 5;
-printDiamond($row);
+
+$column=6;
+printDiamond($column);
 
 ?>

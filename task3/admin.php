@@ -5,11 +5,11 @@ if (!isset($_SESSION['is_admin'])) {
     exit();
 }
 
-// Sample user data; in a real application, replace with database queries
+
 if (!isset($_SESSION['user_list'])) {
     $_SESSION['user_list'] = [
         1 => ['fname' => 'John', 'lname' => 'Doe', 'email' => 'omar@example.com', 'password' => 'Password@123', 'date_created' => '2024-01-01', 'last_login' => '2024-01-10'],
-        // Add more users here as needed
+        
     ];
 }
 

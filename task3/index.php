@@ -51,7 +51,7 @@
         <img src="./Media/landing_page.png" alt="Illustration" class="illustration">
         <div class="mt-4">
             <a href="login.php" class="btn btn-login btn-lg mb-3">Login</a>
-            <a href="signup.php" class="btn btn-signup btn-lg">Sign Up</a>
+            <a href="signup.php" class="btn btn-signup btn-lg mb-3">Sign Up</a>
         </div>
     </div>
 

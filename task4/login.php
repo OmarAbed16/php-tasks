@@ -8,8 +8,11 @@
     <title>Sign UPt</title>
     <style>
         .form{
-            width: 230px;
-            height: 280px;
+            width: 330px;
+            height: 380px;
+        }
+        body{
+            background:lightblue;
         }
     </style>
 </head>
